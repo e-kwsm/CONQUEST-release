@@ -348,7 +348,7 @@ include several shells of neighbouring atoms.
 
 The OSSF approach is most likely to be useful when linear scaling
 calculations with large basis sets are required.  An example set of
-parmeters is found below.
+parameters is found below.
 
 ::
 

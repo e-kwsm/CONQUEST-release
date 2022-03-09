@@ -251,7 +251,7 @@ can be specified as follows:
                  "support_fn_range": 6.9}}
 
 If the basis set ``.ion`` files are present in the directory containing the ASE
-script are pressent and are named ``element.ion``, then the relevant parameters
+script are present and are named ``element.ion``, then the relevant parameters
 will be parsed from the ``.ion`` files and included when the input file is
 written and this dictionary can be omitted. It is more important when, for
 example, setting up a multisite calculation, when the number of contracted
