@@ -48,7 +48,7 @@ then construct the search direction at step :math:`n`, :math:`D_n`,
 
    D_n = \beta_n D_{n-1} + \mathbf{f}_n,
 
-and peform the line minimisation in this direction. This process is repeated
+and perform the line minimisation in this direction. This process is repeated
 until the maximum force component is below some threshold.
 
 Go to :ref:`top <theory-strucrelax>`.

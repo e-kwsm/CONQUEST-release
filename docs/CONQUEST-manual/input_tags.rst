@@ -824,7 +824,7 @@ AtomMove.TestAllForces (*boolean*)
     *default*: F
 
 AtomMove.CalcStress (*boolean*)
-    Toggle calculation of the stress tensor. Switching off can improve performace.
+    Toggle calculation of the stress tensor. Switching off can improve performance.
 
     *default*: T
 

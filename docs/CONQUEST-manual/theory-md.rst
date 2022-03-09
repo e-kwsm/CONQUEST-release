@@ -78,7 +78,7 @@ guess for the next SCF cycle, a problem arises because this process breaks the
 time-reversibility of the dynamics. This is manifested as a gradual drift in the
 total energy in the case of a NVE simulation, or the conserved quantity in the
 case of non-Hamiltonian dynamics. The solution proposed by Niklasson
-:cite:`t-Niklasson2008,t-Niklasson2014` is to introduce auxilliary electronic
+:cite:`t-Niklasson2008,t-Niklasson2014` is to introduce auxiliary electronic
 degrees of freedom into the Lagrangian, which can be propagated via
 time-reversible integrators.
 
@@ -115,7 +115,7 @@ practice to gradually drift from the harmonic centre over time, increasing the
 number of SCF iterations required to reach the minimum over the course of the
 simulation. To remove such numerical errors, the final dissipative term is
 included, and is found to have a minimal effect on the time-reversibility. We
-note that since the auxiliary variable :math:`X` is used to generate an intial
+note that since the auxiliary variable :math:`X` is used to generate an initial
 guess for the SCF process, it does not appear in the conserved
 (pseudo-Hamiltonian) quantity for the dynamics.
 
@@ -138,7 +138,7 @@ model such systems by positing a set of equations of *non-Hamiltonian* equations
 of motion, and proving that they generate the correct statistical ensemble
 :cite:`t-Tuckerman2010`. This is the extended system approach: we modify the
 Hamiltonian to include the thermostat and/or barostat degrees of freedom, derive
-the (pseudo-) Hamiltonian equations of motion, and demostrate that the correct
+the (pseudo-) Hamiltonian equations of motion, and demonstrate that the correct
 phase space distribution for the ensemble is recovered.
 
 Go to :ref:`top <theory-md>`.
@@ -284,14 +284,14 @@ Instead of modifying the Hamiltonian, the Berendsen-type weak coupling method
 :cite:`t-Berendsen1984` involves coupling the ionic degrees of freedom to a an
 external temperature and/or pressure bath via "the principle of least local
 perturbation consistent with the required global coupling." Thermostatting is
-acheived via a Langevin-type equation of motion, in which the system is globally
+achieved via a Langevin-type equation of motion, in which the system is globally
 coupled to a heat bath and subjected to random noise:
 
 .. math::
     m_i\ddot{\mathbf{r}}_i = \mathbf{F}_i + m_i \gamma\left(\frac{T_0}{T}-1\right)\dot{\mathbf{r}}_i,
 
 where :math:`\gamma` is a global friction constant chosen to be the same for all
-particles. This can be acheived in practice by rescaling the velocities
+particles. This can be achieved in practice by rescaling the velocities
 :math:`\mathbf{v}_i \rightarrow \lambda\mathbf{v}_i`, where :math:`\lambda` is,
 
 .. math::
