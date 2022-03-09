@@ -96,7 +96,7 @@ contains
     disp_force  = 0.0_double
 
     allocate ( neighbour_part(D2_CS%ng_cover), STAT=stat )
-    if (stat .NE. 0) call cq_abort("Eror allocating neighbour_list: ", D2_CS%ng_cover)
+    if (stat .NE. 0) call cq_abort("Error allocating neighbour_list: ", D2_CS%ng_cover)
 
     real_cell_vec(1, 1) = r_super_x
     real_cell_vec(1, 2) = zero
@@ -242,7 +242,7 @@ contains
 109 format(i10, 3f15.10)
 
     deallocate ( neighbour_part, STAT=stat )
-    if (stat .NE. 0) call cq_abort("Eror deallocating neighbour_part: ", D2_CS%ng_cover, stat)
+    if (stat .NE. 0) call cq_abort("Error deallocating neighbour_part: ", D2_CS%ng_cover, stat)
 
     return
   end subroutine dispersion_D2
